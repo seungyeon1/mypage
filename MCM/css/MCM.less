@@ -1,6 +1,6 @@
 *{list-style:none; margin:0; padding:0; text-decoration:none;}
 
-.header{border:1px #f00 solid; z-index:1 ;width: 100%; height: 70px; background-color:#000; position:fixed;
+.header{ z-index:3 ;width: 100%; height: 70px; background-color:#000; position:fixed;
 
 
     .header_logo{float:left;
@@ -17,28 +17,29 @@
 } //header end//
 
 
-.MCM_content{width: 100%;
+.MCM_content{width: 100%; position:relative;
 
     .Main_slider{
-        border:1px #000 solid; height: 750px; padding:60px;
+        position:relative;
+         height: 822px;
         .on1 a{background-image:url(../../images/ov.png);
                 background-repeat:no-repeat;
                 background-position:center,center;
 
                 margin:0 9px;}
         li{display:inline-block;
-        :first-child img{display:block;}
+        &:first-child img{display:block;}
             img{position: absolute;
-                left: 0;
-                top: 72px;
+
+                top: 70px;
                 display:none;
 
             }
         }
         .stopimg{background-image:url(../../images/stop.png);
                  position: relative;
-                 top: 676px;
-                 left: 967px;
+                 top: 726px;
+                 left: 1037px;
                  background-color: transparent;
                  border: none;
                  width: 10px;
@@ -46,8 +47,8 @@
         }
         a{display:inline-block;text-indent:-9999px; width: 14px; height:14px; z-index: 2;
             position: relative;
-            top: 700px;
-            left: 810px;
+            top: 750px;
+            left: 876px;
             background-image:url(../../images/out.png);
             background-repeat:no-repeat;
             background-position:center,center;
@@ -60,11 +61,106 @@
     }//Main_slider end//
 
     .second_content{
-        border:1px #000 solid; height: 635px; padding:20px 0px 120px 0; background-color:#555555
-    }
+        height: 635px;position:relative;
+        .text{text-align:center; padding:120px 0;}
+        .btn1{width: 360px; margin:60px auto 0;display:block;}
+        .btn2{width: 360px;
+                img{margin-top: 7px;}
+            }
+
+
+
+
+
+    }//second_content end//
 
     .third_gallerylist_content{
-        border:1px #000 solid; height: 1405px; padding:90px 0px 0px 60px; background-color:#eeeeee;
+        height: 1405px;border:1px #000 solid;
+        padding:90px 0 60px;
+        margin-top: 240px;
+        background-color: #e5e5e5;
+        h1{text-align:center;font-size: 0}
+        .charm_list{width: 1700px; margin:0 auto; padding:45px 0 20px;}
+        .best{
+            width:750px; height:360px; border:1px #000 solid;
+                position: relative;
+                float: left;
+                margin: 0 50px 70px;
+        }
+        .frame{ padding: 10px;
+                width: 326px;
+                height: 326px;
+
+                position: absolute;
+                top: 0;
+                left: 20px;
+            .best1img{height: 326px;}
+            .frame_img{width: 346px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;}
+            .frame_hover{
+                width: 346px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display:none;
+            }
+        }
+        .emblem{
+                top: -14px;
+                left: 5px;
+                width: 74px;
+                height: 74px;
+                position: absolute;
+                border: 3px solid #000;
+                background-color: #fff;
+                text-align: center;
+            strong{
+                    font-size: 40px;
+                    margin-top: 8px;
+                    color:#000;}
+            img{margin-bottom: 5px;}
+        }
+        .charm_info{padding-top: 0;
+                    float: right;
+                    text-align: left;
+                    width: 303px;
+                    font-size: 16px;
+            h2{ margin-top: 32px;
+                margin-bottom: 22px;
+                font-family: 'Gotham Medium', sans-serif;
+                font-size: 44px;
+                line-height: 1em;
+                text-decoration: underline;}
+            p{
+                font-size: 14px;
+                color: #686868;
+                margin-bottom: 8px;
+                line-height: 1.4em}
+
+            span{margin-left: 4px;
+                    font-size:14px;
+                    color:#686868}
+
+            .desc{
+                margin-top: 20px;
+                line-height: 1.8em;
+            }
+            .viewbtn{
+                width: 105px;
+                height: 35px;
+                margin-top: 26px;
+                line-height: 35px;
+                background-color: #000;
+                font-family: 'Times New Roman', sans-serif;
+                font-size: 14px;
+                color: #fff;
+                text-align: center
+            }
+        }
+
+
     }
 
 }//.MCM_content end//

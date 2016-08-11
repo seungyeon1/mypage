@@ -31,25 +31,20 @@ $(function(){
         })
    //-------------------------------------------------------------------------------------------//
        var idx=0;
+        function setFn(){
 
-       var autoslide = setInterval(function(){
+       var idx1 = $('.on1').index();
 
-             var idx1 = $('.on1').index();
+            if( idx1 === ( $('.Main_slider ul li').length - 1) ){
 
+              $('.Main_slider ul li').eq(0).children('a').click();
 
-             if( idx1 === ($('.Main_slider ul li').length-1)){
+            }else{
 
-               $('.Main_slider ul li').eq(0).children('a').click();
+               $('.Main_slider ul li').eq(idx1 + 1).children('a').click();
 
-             }else{
-
-                $('.Main_slider ul li').eq(idx1 + 1).children('a').click();
-
-            }
-
-
-         },4000)
-
+           }
+        }
 
        function movement(start,end,selector){
 
@@ -61,50 +56,50 @@ $(function(){
            }).parent().addClass('on1').siblings().removeClass('on1')
 
            if(selector == $('.Main_slider li').length){
-               idx=0
-               movement("100%","0",idx)
+               idx=0;
+               movement("100%","0",idx);
            }else if(selector < 0){
                idx=$('.Main_slider li').length -1;
-               movement("-100%","0",idx)
+               movement("-100%","0",idx);
            }
        }
 
+       var goStop = 0;
 
         $('.Main_slider a').click(function(){
-            idx=$(this).parent().index();
-            var hisidx=$('.Main_slider .on1').index()
 
 
-            autoslide = setInterval(function(){
-
-             var idx1 = $('.on1').index();
-
-             play==0;
-
-             if( idx1 === ($('.Main_slider ul li').length-1)){
-
-               $('.Main_slider ul li').eq(0).children('a').click();
-
-             }else{
-
-                $('.Main_slider ul li').eq(idx1 + 1).children('a').click();
-
-             }
-
-
-         },4000)
+            idx = $(this).parent().index();
+            var hisidx = $('.Main_slider .on1').index();
 
             movement("0","-100%",hisidx);
             movement("100%","0",idx);
+            if(goStop == 1){
+                goStop = 0;
+                autoslide = setInterval(function(){setFn();},4000);
+            }
             return false;
-
-
         })
+
+        var autoslide = setInterval(function(){setFn();},4000);
+
 
          $('.Main_slider .stopimg').click(function(){
-
+            goStop = 1;
             clearInterval(autoslide);
 
-
         })
+
+ //---------------------------------------------------------------------------//
+        $('.frame').mouseover(function(){
+            $(this).find('.frame_hover').css({
+                display:'block'
+            })
+        })
+        $('.frame').mouseleave(function(){
+            $('.frame_hover').css({
+                display:'none'
+            })
+        })
+
 })

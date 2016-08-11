@@ -5,8 +5,7 @@
   text-decoration: none;
 }
 .header {
-  border: 1px #f00 solid;
-  z-index: 1 ;
+  z-index: 3 ;
   width: 100%;
   height: 70px;
   background-color: #000;
@@ -36,11 +35,11 @@
 }
 .MCM_content {
   width: 100%;
+  position: relative;
 }
 .MCM_content .Main_slider {
-  border: 1px #000 solid;
-  height: 750px;
-  padding: 60px;
+  position: relative;
+  height: 822px;
 }
 .MCM_content .Main_slider .on1 a {
   background-image: url(../../images/ov.png);
@@ -51,20 +50,19 @@
 .MCM_content .Main_slider li {
   display: inline-block;
 }
-.MCM_content .Main_slider li :first-child img {
+.MCM_content .Main_slider li:first-child img {
   display: block;
 }
 .MCM_content .Main_slider li img {
   position: absolute;
-  left: 0;
-  top: 72px;
+  top: 70px;
   display: none;
 }
 .MCM_content .Main_slider .stopimg {
   background-image: url(../../images/stop.png);
   position: relative;
-  top: 676px;
-  left: 967px;
+  top: 726px;
+  left: 1037px;
   background-color: transparent;
   border: none;
   width: 10px;
@@ -77,22 +75,136 @@
   height: 14px;
   z-index: 2;
   position: relative;
-  top: 700px;
-  left: 810px;
+  top: 750px;
+  left: 876px;
   background-image: url(../../images/out.png);
   background-repeat: no-repeat;
   background-position: center,center;
   margin: 0 9px;
 }
 .MCM_content .second_content {
-  border: 1px #000 solid;
   height: 635px;
-  padding: 20px 0px 120px 0;
-  background-color: #555555;
+  position: relative;
+}
+.MCM_content .second_content .text {
+  text-align: center;
+  padding: 120px 0;
+}
+.MCM_content .second_content .btn1 {
+  width: 360px;
+  margin: 60px auto 0;
+  display: block;
+}
+.MCM_content .second_content .btn2 {
+  width: 360px;
+}
+.MCM_content .second_content .btn2 img {
+  margin-top: 7px;
 }
 .MCM_content .third_gallerylist_content {
-  border: 1px #000 solid;
   height: 1405px;
-  padding: 90px 0px 0px 60px;
-  background-color: #eeeeee;
+  border: 1px #000 solid;
+  padding: 90px 0 60px;
+  margin-top: 240px;
+  background-color: #e5e5e5;
+}
+.MCM_content .third_gallerylist_content h1 {
+  text-align: center;
+  font-size: 0;
+}
+.MCM_content .third_gallerylist_content .charm_list {
+  width: 1700px;
+  margin: 0 auto;
+  padding: 45px 0 20px;
+}
+.MCM_content .third_gallerylist_content .best {
+  width: 750px;
+  height: 360px;
+  border: 1px #000 solid;
+  position: relative;
+  float: left;
+  margin: 0 50px 70px;
+}
+.MCM_content .third_gallerylist_content .frame {
+  padding: 10px;
+  width: 326px;
+  height: 326px;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+.MCM_content .third_gallerylist_content .frame .best1img {
+  height: 326px;
+}
+.MCM_content .third_gallerylist_content .frame .frame_img {
+  width: 346px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.MCM_content .third_gallerylist_content .frame .frame_hover {
+  width: 346px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.MCM_content .third_gallerylist_content .emblem {
+  top: -14px;
+  left: 5px;
+  width: 74px;
+  height: 74px;
+  position: absolute;
+  border: 3px solid #000;
+  background-color: #fff;
+  text-align: center;
+}
+.MCM_content .third_gallerylist_content .emblem strong {
+  font-size: 40px;
+  margin-top: 8px;
+  color: #000;
+}
+.MCM_content .third_gallerylist_content .emblem img {
+  margin-bottom: 5px;
+}
+.MCM_content .third_gallerylist_content .charm_info {
+  padding-top: 0;
+  float: right;
+  text-align: left;
+  width: 303px;
+  font-size: 16px;
+}
+.MCM_content .third_gallerylist_content .charm_info h2 {
+  margin-top: 32px;
+  margin-bottom: 22px;
+  font-family: 'Gotham Medium', sans-serif;
+  font-size: 44px;
+  line-height: 1em;
+  text-decoration: underline;
+}
+.MCM_content .third_gallerylist_content .charm_info p {
+  font-size: 14px;
+  color: #686868;
+  margin-bottom: 8px;
+  line-height: 1.4em;
+}
+.MCM_content .third_gallerylist_content .charm_info span {
+  margin-left: 4px;
+  font-size: 14px;
+  color: #686868;
+}
+.MCM_content .third_gallerylist_content .charm_info .desc {
+  margin-top: 20px;
+  line-height: 1.8em;
+}
+.MCM_content .third_gallerylist_content .charm_info .viewbtn {
+  width: 105px;
+  height: 35px;
+  margin-top: 26px;
+  line-height: 35px;
+  background-color: #000;
+  font-family: 'Times New Roman', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
 }
