@@ -82,7 +82,7 @@
         h1{text-align:center;font-size: 0}
         .charm_list{width: 1700px; margin:0 auto; padding:45px 0 20px;}
         .best{
-            width:750px; height:360px; border:1px #000 solid;
+            width:750px; height:360px;
                 position: relative;
                 float: left;
                 margin: 0 50px 70px;
@@ -160,7 +160,87 @@
             }
         }
 
+    }
+  .bg{
+      background-image:url(../../images/pop_bgimg.png);
+    .popup{
+        background-color:#fff;
+        border:1px #000 solid;
+        width: 951px;
+        height: 796px;
+        position:relative;
+        margin:0 auto;
+        display:none;
+        text-align:center;
+        .popup_conts{
+
+            position:relative;
+            width: 831px;
+            height: 531px;
+            padding:60px;
+            border:1px #000 solid;
+            .popup_cont{
+                position:absolute;
+                width: 831px;
+                height: 424px;
+                overflow:hidden;
+                .left_cont{
+                    float:left;width: 418px;border:1px #d9d9d9 solid;
+                    img{width:100%;}
+                }
+                .right_cont{
+                    float:right;width: 354px;
+                    h3{
+                        margin-top: 34px;
+                        margin-bottom: 12px;
+                        font-family: 'Times New Roman', sans-serif;
+                        font-size: 18px;
+                        text-decoration: underline;
+                    }
+                    .title{font-family: 'Nanum Barun Gothic', sans-serif;
+                            font-size: 28px;
+                            font-weight: bold;}
+                    .name{font-size:16px;}
+                    ul{
+                        margin-top: 42px;
+                        width: 354px;
+                        height: 85px;
+                        li{
+                            float: left;
+                            margin-right: 4px;
+                            width: 83px;
+                            border: 1px solid #e4e4e3;
+                            img{width: 81px;}
+                        }
+                    }
+                }
+
+            }
+                .popup_text{
+                    position:absolute;
+                    bottom:50px;
+                    width: 831px;
+                    height: 61px;
+
+                    margin-top: 46px;
+                    text-align: left;
+                    .desc{
+                        margin-top: 20px;
+                        font-family: 'Nanum Barun Gothic', sans-serif;
+                        font-size: 12px;
+                        color: #686868;
+                        line-height: 2em;
+                        letter-spacing: 0.1em;
+                    }
+                }
+        }
+    }
+        .closebtn{
+            position: absolute;
+            bottom: 808px;
+            right: 0
+        }
+
 
     }
-
 }//.MCM_content end//

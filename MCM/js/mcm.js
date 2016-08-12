@@ -102,4 +102,11 @@ $(function(){
             })
         })
 
+        $('.frame').click(function(){
+            $(this).parents('.charm_list').next().next().css({
+                display:'block'
+            })
+            return false
+        })
+
 })
