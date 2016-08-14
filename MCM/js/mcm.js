@@ -103,10 +103,20 @@ $(function(){
         })
 
         $('.frame').click(function(){
-            $(this).parents('.charm_list').next().next().css({
+            $(this).parents('.charm_list').next().next().next().css({
                 display:'block'
             })
             return false;
         })
+        $('.closebtn').click(function(){
+          // $('.popup').animate({
+          //   scrollTop:50%;
+          //
+          // })
 
+          $('.popup').css({
+            display:'none'
+          })
+          return flase;
+        })
 })
