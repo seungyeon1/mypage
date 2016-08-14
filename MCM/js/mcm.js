@@ -106,7 +106,7 @@ $(function(){
             $(this).parents('.charm_list').next().next().css({
                 display:'block'
             })
-            return false
+            return false;
         })
 
 })
