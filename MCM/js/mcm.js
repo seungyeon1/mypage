@@ -108,15 +108,18 @@ $(function(){
             })
             return false;
         })
-        $('.closebtn').click(function(){
-          // $('.popup').animate({
-          //   scrollTop:50%;
-          //
-          // })
 
+        $('.closebtn').click(function(){
           $('.popup').css({
             display:'none'
           })
           return flase;
         })
-})
+        
+
+
+
+
+
+
+})//function end//
