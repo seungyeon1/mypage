@@ -102,7 +102,7 @@ $(function(){
                 display:'none'
             })
         })
-    
+
 
         $('.frame').click(function(){
             $(this).parents('.charm_list').next().next().next().css({
@@ -124,7 +124,13 @@ $(function(){
           return false;
         })
 
+        $('.number_list a').click(function(){
+          var aa= $(this).index()
+          var hisidx=$('.number_list a .ov').index();
 
+
+          return false;
+        })
 
 
 
