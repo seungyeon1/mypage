@@ -95,15 +95,20 @@ $(function(){
             $(this).find('.frame_hover').css({
                 display:'block'
             })
+
         })
         $('.frame').mouseleave(function(){
             $('.frame_hover').css({
                 display:'none'
             })
         })
+    
 
         $('.frame').click(function(){
             $(this).parents('.charm_list').next().next().next().css({
+                display:'block'
+            })
+            $('.bg').css({
                 display:'block'
             })
             return false;
@@ -113,9 +118,12 @@ $(function(){
           $('.popup').css({
             display:'none'
           })
-          return flase;
+          $('.bg').css({
+              display:'none'
+          })
+          return false;
         })
-        
+
 
 
 
