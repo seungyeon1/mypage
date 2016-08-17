@@ -17,6 +17,12 @@ $(document).ready(function(){
                   }
                 })
             $('.nav button').click(function(){
-              $(this).text('Close Menu')
+                if(!$('.nav ul').is('.on')){
+                        $('.nav ul').addClass('on').show()
+                        $(this).text('Close Menu')
+                    }else if($('.nav ul').is('.on')){
+                        $('.nav ul').removeClass('on').hide()
+                        $(this).text('Main Menu')
+                    }
             })
   })
