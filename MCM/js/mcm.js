@@ -124,15 +124,44 @@ $(function(){
           return false;
         })
 
-        $('.number_list a').click(function(){
-          var aa= $(this).index()
-          var hisidx=$('.number_list a .ov').index();
 
+// /----------------------------- -----------------------------------------/
+    $('.number_list .next').click(function(){
 
-          return false;
-        })
+        var hidx = $('.number_list span a.ov').index();
 
+        $('.number_list span a').eq(hidx).removeClass('ov').next().addClass('ov')
 
+        if(hidx >= 2){
+            hidx = 2;
+            $('.number_list span a').eq(hidx).addClass('ov').siblings().removeClass('ov')
+        }
+        return false;
+    });
+
+    $('.number_list .prev').click(function(){
+        var hidx = $('.number_list span a.ov').index();
+        $('.number_list span a').eq(hidx).removeClass('ov').prev().addClass('ov')
+        if(hidx == 0){
+            hidx = 0;
+            $('.number_list span a').eq(hidx).addClass('ov').siblings().removeClass('ov')
+        }
+        return false;
+    });
+
+    $('.number_list a').click(function(){
+        var iidx = $(this).index();
+        var hidx = $('.number_list span a.ov').index();
+        if(iidx > hidx){
+            $('.number_list span a').eq(iidx).addClass('ov')
+            $('.number_list span a').eq(hidx).removeClass('ov')
+        }else if(iidx < hidx){
+            $('.number_list span a').eq(iidx).addClass('ov')
+            $('.number_list span a').eq(hidx).removeClass('ov')
+        }
+        return false;
+
+    })
 
 
 
