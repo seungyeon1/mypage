@@ -1,0 +1,41 @@
+#content{
+    width: 100%;
+    height: 100%;
+    margin-top:4px;
+    padding:0 0 50px; position:relative;
+}
+#video_logo{
+    height: 60px;
+    margin:0 auto;
+    padding:20px 0;
+    background-color: #f4f4f4;
+    background-image: url(../images/videologo.png);
+    background-repeat: no-repeat;
+    background-position: center;}
+#video_list{
+            min-width: 80%;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 0 10px 0;
+}
+#video_list ul{
+    list-style: none outside none;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+#video_list li{
+    max-width: 200px;
+display: inline-block;
+margin: 0 10px;
+}
+#video_list img{
+    border: solid 1px #CCCCCC;
+max-width: 100%;
+}
+
+.movie{
+    margin: 0 auto;
+    width: 760px;
+    height: 480px;
+}
