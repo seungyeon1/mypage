@@ -111,6 +111,22 @@ $(function(){
             $('.bg').css({
                 display:'block'
             })
+
+            $('html body').css({
+                'overflow':'hidden', 'height':'100%'
+            })
+            return false;
+        })
+        $('.viewbtn').click(function(){
+            $(this).parents('.charm_list').next().next().next().css({
+                display:'block'
+            })
+            $('.bg').css({
+                display:'block'
+            })
+            $('html body').css({
+                'overflow':'hidden', 'height':'100%'
+            })
             return false;
         })
 
@@ -121,8 +137,12 @@ $(function(){
           $('.bg').css({
               display:'none'
           })
+          $('html body').css({
+            'overflow':'visible'
+        })
           return false;
         })
+
 
 
 // /----------------------------- -----------------------------------------/
@@ -140,7 +160,9 @@ $(function(){
     });
 
     $('.number_list .prev').click(function(){
+
         var hidx = $('.number_list span a.ov').index();
+
         $('.number_list span a').eq(hidx).removeClass('ov').prev().addClass('ov')
         if(hidx == 0){
             hidx = 0;
@@ -149,7 +171,7 @@ $(function(){
         return false;
     });
 
-    $('.number_list a').click(function(){
+    $('.number_list span a').click(function(){
         var iidx = $(this).index();
         var hidx = $('.number_list span a.ov').index();
         if(iidx > hidx){
