@@ -1,0 +1,180 @@
+@media only screen and (max-width: 769px){
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.main {
+    clear: both;
+    float: left;
+    margin-left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+section {
+    display: block;
+    width: 100%;
+    /*padding: 30px 0;*/
+}
+#sect-title {
+    margin: 0 auto;
+    width: 100%;
+    height: 75px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 40%;
+    text-indent: -9999px;
+    padding-bottom: 30px;
+    background-color:#f4f4f4;
+}
+.fullbox {
+    max-width: 1000px;
+    width: 85%;
+    margin: 0 auto;
+}
+.box-l {
+    width: 100%;
+    float: none;
+}
+section img {
+    max-width: 100%;
+}
+.box-r {
+    width: 100%;
+    float: none;
+}
+.album-title h2 {
+    display: block;
+    padding: 15px;
+    float: left;
+}
+.album-title p {
+    display: block;
+    margin: 20px 20px 0 0;
+    float: right;
+}
+#album-list li {
+    max-width: 90px;
+    display: inline-block;
+    margin: 0 2px;
+    vertical-align: top;
+}
+footer{
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 57px;
+    background-image: url(img/footerbg.png);
+
+
+}
+
+}
+@media only screen and (max-width: 481px){
+.main {
+    clear: both;
+    float: left;
+    margin-left: 0;
+    width: 100%;
+    /* height: 100%; */
+    display: block;
+}
+section {
+    display: block;
+    width: 100%;
+}
+#sect-title {
+    margin: 0 auto;
+    width: 100%;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 40%;
+    text-indent: -9999px;
+    padding-bottom: 30px;
+    background-color:#f4f4f4;
+}
+#sect-main p {
+    padding: 0;
+    font-size: 12px;
+    line-height: 17px;
+}
+.fullbox {
+    width: 85%;
+    margin: 0 auto;
+}
+.box-r {
+    width: 100%;
+    float: none;
+}
+section img {
+    max-width: 100%;
+}
+.album-title {
+    background-image: url(img/a-titlebg.png);
+    color: #fff;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.album-title h2 {
+    display: block;
+    padding: 2px;
+    float: none;
+}
+.album-title p {
+    display: block;
+    float: none;
+    margin: 0;
+}
+#sect-main h3 {
+    padding: 10px 0 10px 0;
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 37px;
+    background-image: url(img/footerbg.png);
+    z-index: 1;
+}
+.jyplogo a {
+    background-image: url(img/jyplogo.png);
+    background-repeat: no-repeat;
+    background-position: 10% 5%;
+    background-size: 60%;
+    text-indent: -9999px;
+    left: 7%;
+    float: left;
+    z-index: 1;
+}
+.snsicon {
+    position: relative;
+    display: block;
+    width: auto;
+    height: 20px;
+    text-align: center;
+    top: 7px;
+    right: 7%;
+    float: right;
+}
+a.sb, .sb a {
+    float: left;
+    width: 23px;
+    height: 23px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 90%;
+    margin: 0 7px 0 0;
+    background-color: #e4e4e4;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+}
