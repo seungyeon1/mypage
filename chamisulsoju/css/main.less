@@ -1,7 +1,64 @@
-.wrap{
-
-    overflow:hidden;
-    width:100%;
-
-
+.main_dimmed{
+            background:url(../images/bg_dimmed.png) repeat 0 0;
+            display:none;
+            z-index:100;
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            opacity:0.5;
 }
+.layer_move{
+            display:none;
+            background:url(../images/content_bg.gif) no-repeat 0 0;
+            position:fixed;
+            top:50%;
+            left:50%;
+            z-index:100;
+            width: 820px;
+            height: 464px;
+            margin-top:-275px;
+            margin-left:-420px;
+            padding:30px 10px 56px 10px;
+
+        .move_tab{
+                  position:relative;
+                  width: 820px;
+                  height: 464px;
+        }
+        .mov_btn{
+                 width: 820px;
+                 height: 47px;
+                 padding-top:9px;
+                 text-align:center;
+                 display:block;
+            a{
+                display:inline-block;
+                overflow:hidden;
+                width: 173px;
+                height: 40px;
+                text-indent:100%;
+                white-space:nowrap;
+            }
+                .btn1{
+                    background:url(../images/btn1.png) no-repeat  0 0;
+                    margin-right:60px;
+                }
+                .btn2{
+                    background:url(../images/btn2.png) no-repeat  0 0;
+                }
+        }//move_btn end//
+        .close_btn{
+
+            overflow:hidden;
+            position:absolute;
+            top:4px;
+            right:11px;
+            z-index:1000;
+            width: 22px;
+            height: 22px;
+            text-indent:100%;
+            white-space:nowrap;
+        }
+}//layer_move end//
