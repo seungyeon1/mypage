@@ -74,16 +74,29 @@
    .box_right .box_right_album .album_title p{float:right;margin:20px 10px 0 0 ; color:white;}
 
 
-    .contents .bottom{ min-width: 70%; max-width: 700px; margin: 0 auto; padding: 40px 0 10px 0;
-        position:relative;
+    .contents .bottom{
+                        min-width: 70%; max-width: 700px;
+                        margin: 0 auto; padding: 40px 0 10px 0;
+
     }
-    .contents .bottom .img_list{position:relative; margin:0; padding:0; }
-    .contents .bottom .img_list li{max-width:150px; margin:0 10px; display:inline-block; overflow:hidden;
+    .contents .bottom .img_list{
+                                    list-style: none outside none;
+                                    margin: 0;
+                                    padding: 0;
+                                    text-align: center;
     }
-    .contents .bottom .img_list .sub_img_2{position:relative; top:0; left:39%;
+
+    .contents .bottom .img_list li{
+
+                                    display: inline-block;
+                                    margin: 0 10px;
     }
+
+    /*.contents .bottom .img_list .sub_img_2{position:relative; top:0; left:39%;
+    }
+
     .contents .bottom .img_list .sub_img_1{position:absolute; top:0; right:61%;
-    }
+    }*/
 
     @media screen and (max-width:768px){
 
@@ -106,10 +119,12 @@
                width: 85%;
                margin: 0 auto;
        }
+
        .box_right{
-           width: 100%;
-            float: right;
-         display:block;}
+                    width: 100%;
+                    float: right;
+                    display:block;
+        }
 
         .main_album{
                     width: 100%;
@@ -124,10 +139,10 @@
           float: right;
         }
         .img_list li{
-          max-width: 90px;
+          max-width: 150px;
           display: inline-block;
-          margin: 0 2px;
-          vertical-align: top;
+          margin:0 10px;
+
         }
 
      } /*media 768end*/
