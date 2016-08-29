@@ -1,8 +1,6 @@
 $(function(){
       $('.visual_control ul li a').click(function(){
-
           idx=$(this).parent().index();
-          
       })
         return false;
 
