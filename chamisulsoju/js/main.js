@@ -1,0 +1,3 @@
+$(function(){
+    
+})//big function end//
