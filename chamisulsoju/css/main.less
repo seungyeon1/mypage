@@ -8,15 +8,25 @@
     .main_rolling{
                     overflow: hidden;
                     position: relative;
-                    left: 50%;
+
+                    font-size:0px;
                     width: 2000px;
                     height: 523px;
-                    margin-left: -1000px;
 
     ul{
-        height: 1569px;
-        margin-top:-523px;
+        li {
+            img{
+                position:absolute;
+                top:0;
+                left:0;
+                display:none;
+            }
+        }
+        li:first-child img{
+            display:block;
+        }
     }
+
 
     }//main_rolling end//
 
@@ -25,9 +35,9 @@
                     bottom:23px;
                     left:50%;
                     margin-left:-483px;
-
                     width: 78px;
                     height: 15px;
+                    
                     li{
                         float: left;
                         margin-right: 5px;
@@ -223,7 +233,7 @@
                      }
                     }
                     .gnb2th{
-                      display: block;
+                      display: none;
                       position: absolute;
                       top: 22px;
                       left: -11px;
@@ -507,7 +517,7 @@
                 }
         }//move_btn end//
         .close_btn{
-
+            &:hover{cursor:pointer;}
             overflow:hidden;
             position:absolute;
             top:4px;
