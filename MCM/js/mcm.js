@@ -30,10 +30,11 @@ $(function(){
             })
         })
    //-------------------------------------------------------------------------------------------//
-       var idx=0;
-        function setFn(){
+      var idx=0;
 
-       var idx1 = $('.on1').index();
+      function setFn(){
+
+      var idx1 = $('.on1').index();
 
             if( idx1 === ( $('.Main_slider ul li').length - 1) ){
 
