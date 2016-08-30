@@ -1,11 +1,21 @@
 $(function(){
+    var rolling = null;
+    function hahaha(){
+        var idxsss = $('.main_rolling > ul >li.on').index();
+
+        if(idxsss == $('.main_rolling > ul >li').length-1){
+            $('.visual_control > ul > li').eq(0).children('a').click();
+        }else{
+            $('.visual_control > ul > li').eq(idxsss+1).children('a').click();
+        }
+
+    }
     idxs = 0;
     $('.visual_control > ul > li > a').click(function(){
 
         idxs = $(this).parent().index();
         var onidx = $('.main_rolling > ul > li.on').index();
 
-        console.log(onidx)
 
         if(idxs > onidx){
             $('.main_rolling > ul> li').eq(idxs).addClass('on').children('img').css({
@@ -30,6 +40,42 @@ $(function(){
         }
         return false;
     })
+
+    $('.visual_control ul li a').click(function(){
+        $(this).find('img').attr('src','../chamisulsoju/images/rollon.png');
+        $(this).parent('li').siblings().find('img').attr('src','../chamisulsoju/images/rolloff.png');
+    })
+
+    var rolling = setInterval(function(){
+        hahaha();
+
+    },4000)
+
+
+    $('.roll_stop a').click(function(){
+        clearInterval(rolling)
+
+        return false;
+    })
+
+    $('.roll_play a').click(function(){
+        rolling = setInterval(function(){
+            hahaha();
+
+        },4000)
+        return false;
+    })
+
+
+
+
+
+
+
+
+
+
+
 
 
 
