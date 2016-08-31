@@ -35,3 +35,43 @@
 #profile_list .thumb{width: 100%;}
 
 #profile_list:hover{opacity:1;}
+
+
+
+@media screen and (max-width:479px){
+    #profile_list{
+                    margin-left: 3%;
+                    width: 50px;
+                    top: 12%;
+                    z-index: 1;
+                    text-align: center;
+    }
+    #profile_list a{
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #fff;
+                        margin: 1px;
+                        padding: 0;
+                        outline: none;
+                        cursor: pointer;
+                        background-repeat: no-repeat;
+    }
+}
+}
+
+
+
+@media screen and (max-width:768px){
+
+    #profile_list a{
+    width: 60px;
+    height: 60px;
+    float: left;
+    border: 2px solid #fff;
+    margin: 5px;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    }
+}
