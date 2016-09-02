@@ -1,45 +1,648 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>osulloc</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <link rel="stylesheet" href="css/main.css" type="text/css" />
-  <link rel="stylesheet" href="css/common.css">
-  <script type="text/javascript" src="../osulloc/js/main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+
+    <title>오설록, 차와 제주가 선사하는</title>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<![endif]-->
 </head>
 <body>
-<div class="header">
-    <div class="top_menu">
-      <h2>
-        <a href="">
-        <img src="images/logo.png" alt="">
-        </a>
-      </h2>
-      <div class="top_menu_list">
-        <ul class="menu_list">
-          <li><a href="">Tea Shop</a></li>
-          <li><a href="">Tea Guide</a></li>
-          <li><a href="">About Osulloc</a></li>
-          <li><a href="">Tea Life</a></li>
-          <li><a href="">Jeju Tea Museum</a></li>
-        </ul>
-      </div>
-      <div class="top_menu_login_etc">
-        <a class="f_etc" href="">로그인</a>
-        <a href="">회원가입</a>
-        <a href="">주문배송조회</a>
-        <a href="">고객센터</a>
-        <a href="">매장찾기</a>
-        <div class="selectbox">
-          <span>한국어</span>
-        </div>
-      </div>
-  </div>
-  <div class="top_menu_mypage"></div>
+    <div class="wrap">
+        <header id="header">
+            <div class="gnb-bg"></div>
+            <div class="header_wrap">
+                <h1 class="logo">
+                    <a href="">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </h1>
+                <div class="gnb">
+                    <div class="nav">
+                        <ul>
+                            <li>
+                                <a href="">Tea Shop</a>
+                                <div class="depth2">
+                                    <div class="one">
+                                        <img src="img/header_arrow.PNG" alt="">
+                                    </div>
+                                    <ul class="point1">
+                                        <li><a href="">전체상품</a></li>
+                                        <li><a href="">베스트셀러</a></li>
+                                        <li><a href="">티하우스 메뉴</a></li>
+                                        <li><a href="">VVIP ZONE</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">Tea Guide</a>
+                                <div class="depth2">
+                                    <div class="two">
+                                        <img src="img/header_arrow.PNG" alt="">
+                                    </div>
+                                    <ul class="point2">
+                                        <li><a href="">시즌추천</a></li>
+                                        <li><a href="">매거진</a></li>
+                                        <li><a href="">차 정보</a></li>
+                                        <li><a href="">티 카운셀러</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">About Osulloc</a>
+                                <div class="depth2">
+                                    <div class="three">
+                                        <img src="img/header_arrow.PNG" alt="">
+                                    </div>
+                                    <ul class="point3">
+                                        <li><a href="">Brand Story</a></li>
+                                        <li><a href="">Since 1979</a></li>
+                                        <li><a href="">오설록 차밭 이야기</a></li>
+                                        <li><a href="">숫자로 보는 오설록</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">Tea Life</a>
+                                <div class="depth2">
+                                    <div class="fore">
+                                        <img src="img/header_arrow.PNG" alt="">
+                                    </div>
+                                    <ul class="point4">
+                                        <li><a href="">이벤트</a></li>
+                                        <li><a href="">SNS</a></li>
+                                        <li><a href="">커뮤니TEA</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">Jeju Tea Museum</a>
+                                <div class="depth2">
+                                    <div class="five">
+                                        <img src="img/header_arrow.PNG" alt="">
+                                    </div>
+                                    <ul class="point5">
+                                        <li><a href="">티뮤지엄 소개</a></li>
+                                        <li><a href="">티스톤 예약</a></li>
+                                        <li><a href="">제주오설록 맵</a></li>
+                                        <li><a href="">방문기</a></li>
+                                        <li><a href="">햇차 페스티벌</a></li>
+                                    </ul>
+                                </div>
+                            </li>
 
-</div>
-<div class="section"></div>
-<div class="footer"></div>
+                        </ul>
+                    </div>
+                </div>
+                <!-- gnb end -->
+                <div class="img_menu">
+                    <a href="">
+                        <img src="img/icon_1.GIF" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/icon_2.PNG" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/icon_3.GIF" alt="">
+                    </a>
+                </div>
+                <!-- imgmenu end -->
+                <div class="header_link">
+                    <ul>
+                        <li>
+                            <a href="">로그인</a>
+                        </li>
+                        <li>
+                            <a href="">회원가입</a>
+                        </li>
+                        <li>
+                            <a href="">주문배송조회</a>
+                        </li>
+                        <li>
+                            <a href="">고객센터</a>
+                        </li>
+                        <li>
+                            <a href="">매장찾기</a>
+                        </li>
+                    </ul>
+                    <div class="selectmenu">
+                        <a href="">한국어</a>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    한국어
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    English
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    中文
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="header_line"></div>
+        </header>
+        <!-- header End -->
+
+
+        <section id="section">
+            <div class="main_slide">
+                <ul>
+                    <li style="background-image:url(img/mainslide_1.jpg)">
+                        <div class="banner_box">
+                            <h2>
+                                <span class="banner_st">오설록 VIP 멤버십으로 초대합니다</span><br/>
+                                <span class="banner_bt">OSULLOC MEMBERSHIP</span>
+                            </h2>
+                            <p>
+                                <span>2016년 8월 16일 ~ 2016년 8월 28일</span>
+                            </p>
+                            <div class="banner_box_btn">
+                                <a href="">
+                                    자세히 보기
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background-image:url(img/mainslide_2.jpg)">
+                        <div class="banner_box">
+                            <h2>
+                                <span class="banner_st">8월, 선물하고 나도 선물받자!</span><br/>
+                                <span class="banner_bt">선물하기 이벤트</span>
+                            </h2>
+                            <p>
+                                <span>2016년 7월 20일 ~ 2016년 8월 31일</span>
+                            </p>
+                            <div class="banner_box_btn">
+                                <a href="">
+                                    자세히 보기
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background-image:url(img/mainslide_3.jpg)">
+                        <div class="banner_box">
+                            <h2>
+                                <span class="banner_st">건강하게! 팔팔하게! 더위를 이겨내세요!</span><br/>
+                                <span class="banner_bt">팔월엔 오설록과 함께</span>
+                            </h2>
+                            <p>
+                                <span>2016년 8월 08일 ~ 2016년 9월 04일</span>
+                            </p>
+                            <div class="banner_box_btn">
+                                <a href="">
+                                    자세히 보기
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background-image:url(img/mainslide_4.jpg)">
+                        <div class="banner_box">
+                            <h2>
+                                <span class="banner_st">8월 14일은 ?? 그린데이!!</span><br/>
+                                <span class="banner_bt">오설록 그린데이 캠페인</span>
+                            </h2>
+                            <p>
+                                <span>2016년 8월 01일 ~ 2016년 8월 28일</span>
+                            </p>
+                            <div class="banner_box_btn">
+                                <a href="">
+                                    자세히 보기
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background-image:url(img/mainslide_5.jpg)">
+                        <div class="banner_box">
+                            <h2>
+                                <span class="banner_st">나의 일상에서 오설록을 찾아주세요!</span><br/>
+                                <span class="banner_bt">OSULLOC SNS 공유하기</span>
+                            </h2>
+                            <p>
+                                <span>2016년 7월 25일 ~ 2016년 8월 28일</span>
+                            </p>
+                            <div class="banner_box_btn">
+                                <a href="">
+                                    자세히 보기
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <div class="slide_btn">
+                        <div class="pre">
+                            <a href="">
+                                <img src="img/main_arr_left.png" alt="">
+                            </a>
+                        </div>
+                         <div class="next">
+                            <a href="">
+                                <img src="img/main_arr_right.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="a_button">
+                        <a class='on' href="">1</a>
+                        <a href="">2</a>
+                        <a href="">3</a>
+                        <a href="">4</a>
+                        <a href="">5</a>
+                    </div>
+                </ul>
+            </div>
+            <div class="main_banner">
+                <div class="banner_wrap">
+                    <div class="banner_text">
+                        <h2>Tea From Jeju Since 1979</h2>
+                        <p>차와 제주가 선사하는 삶의 아름다움</p>
+                        <div class="banner_button">
+                        <a href="">자세히 보기</a>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="centents">
+                <div class="product_list">
+                    <div class="section_line">
+                        <h2>Weekly Bestseller</h2>
+                        <span></span>
+                    </div>
+                    <div class="sub_slide">
+                        <div class="sub_slide_button">
+                            <span class="ss_pre">
+                                <img src="img/pre.png" alt="">
+                            </span>
+                            <span class="ss_next">
+                                <img src="img/next.png" alt="">
+                            </span>
+                        </div>
+                        <ul>
+                            <li>
+                                <a class="item_list" href="">
+                                    <img src="img/item-list_1.png" alt="">
+                                    <p class="list_title">오설록 녹차밀크스프레드 200g</p>
+                                    <p>
+                                        <span class="list_f">8,500원</span>
+                                        <span class="list_l">7,650원(10%↓)</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="item_list" href="">
+                                    <img src="img/item-list_2.png" alt="">
+                                    <p class="list_title">오설록 제주 아일랜드 썸머 컬렉션</p>
+                                    <p>
+                                        <span class="list_f">30,000원</span>
+                                        <span class="list_l">21,000원(30%↓)</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="item_list" href="">
+                                    <img src="img/item-list_3.png" alt="">
+                                    <p class="list_title">설록 몸가물WATER+레몬라임 30입<br/>(13년AD) 1+1</p>
+                                    <p>
+                                        <span class="list_f">36,000원</span>
+                                        <span class="list_l">18,000원(18000원↓)</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="item_list" href="">
+                                    <img src="img/item-list_4.png" alt="">
+                                    <p class="list_title">오설록 내추럴그린클렌징오일 175ML 1+1</p>
+                                    <p>
+                                        <span class="list_f">40,000원</span>
+                                        <span class="list_l">20,000원(50%↓)</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="item_list" href="">
+                                    <img src="img/item-list_1.png" alt="">
+                                    <p class="list_title">오설록 녹차밀크스프레드 200g</p>
+                                    <p>
+                                        <span class="list_f">8,500원</span>
+                                        <span class="list_l">7,650원(10%↓)</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="item_list" href="">
+                                    <img src="img/item-list_2.png" alt="">
+                                    <p class="list_title">오설록 제주 아일랜드 썸머 컬렉션</p>
+                                    <p>
+                                        <span class="list_f">30,000원</span>
+                                        <span class="list_l">21,000원(30%↓)</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="item_list" href="">
+                                    <img src="img/item-list_3.png" alt="">
+                                    <p class="list_title">설록 몸가물WATER+레몬라임 30입<br/>(13년AD) 1+1</p>
+                                    <p>
+                                        <span class="list_f">36,000원</span>
+                                        <span class="list_l">18,000원(18000원↓)</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="item_list" href="">
+                                    <img src="img/item-list_4.png" alt="">
+                                    <p class="list_title">오설록 내추럴그린클렌징오일 175ML 1+1</p>
+                                    <p>
+                                        <span class="list_f">40,000원</span>
+                                        <span class="list_l">20,000원(50%↓)</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="item_list" href="">
+                                    <img src="img/item-list_1.png" alt="">
+                                    <p class="list_title">오설록 녹차밀크스프레드 200g</p>
+                                    <p>
+                                        <span class="list_f">8,500원</span>
+                                        <span class="list_l">7,650원(10%↓)</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="item_list" href="">
+                                    <img src="img/item-list_2.png" alt="">
+                                    <p class="list_title">오설록 제주 아일랜드 썸머 컬렉션</p>
+                                    <p>
+                                        <span class="list_f">30,000원</span>
+                                        <span class="list_l">21,000원(30%↓)</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="item_list" href="">
+                                    <img src="img/item-list_3.png" alt="">
+                                    <p class="list_title">설록 몸가물WATER+레몬라임 30입<br/>(13년AD) 1+1</p>
+                                    <p>
+                                        <span class="list_f">36,000원</span>
+                                        <span class="list_l">18,000원(18000원↓)</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="item_list" href="">
+                                    <img src="img/item-list_3.png" alt="">
+                                    <p class="list_title">설록 몸가물WATER+레몬라임 30입<br/>(13년AD) 1+1</p>
+                                    <p>
+                                        <span class="list_f">36,000원</span>
+                                        <span class="list_l">18,000원(18000원↓)</span>
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="a_button">
+                            <a class="on" href="">1</a>
+                            <a href="">2</a>
+                            <a href="">3</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="img_list">
+                    <div class="img_list_l">
+                        <a href="">
+                            <img src="img/img_list_1.jpg" alt="">
+                        </a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="img/img_list_2.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/img_list_3.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                             <a href="">
+                                <img src="img/img_list_4.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/img_list_5.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+
+
+
+
+                </div>
+                <div class="question">
+                    <div class="question_section">
+                        <p class="on">커피 대신 마실 우리 차를 추전해주세요.</p>
+                        <p><웨딩 그런티>는 어떤 향이 나나요?</p>
+                        <p>우려낸 차를 냉장보관해도 되나요?</p>
+                        <p>이승연은 정말 이쁜가요?</p>
+                        <p><레드 파파야>의 베이스는 무엇인가요?</p>
+                        <div class="question_a">
+                            <a class="on" href="">1</a>
+                            <a href="">2</a>
+                            <a href="">3</a>
+                            <a href="">4</a>
+                            <a href="">5</a>
+                        </div>
+                        <div class="question_btn">
+                            <a href="">
+                                티카운셀러 다른 질문 보기
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="now">
+                <div class="now_section">
+                    <ul>
+                        <li>
+                                <img src="img/now_1.jpg" alt="">
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/now_2.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/now_3.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/now_4.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/now_5.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/now_6.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/now_7.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/now_8.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/now_9.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/now_10.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--section End-->
+
+        <footer id="footer">
+            <div class="footer_line">
+                <div class="footer_center_line">
+                    <div class="info">
+                        <a href="http://www.amorepacific.com/content/company/ko-kr.html">회사소개</a>|
+                        <a href="http://www.beautypoint.co.kr/content/beautypoint/ko-kr/footer/terms/agreement.html">서비스 이용약관</a>|
+                        <a class="color" href="http://www.beautypoint.co.kr/content/beautypoint/ko-kr/footer/privacy/personal.html">개인정보 취급방침</a>|
+                        <a href="http://www.amorepacific.com/content/company/ko-kr/footer/cctv-policies-and-procedures.html">영상정보 처리방침</a>|
+                        <a href="http://www.beautypoint.co.kr/beautypoint/about.html">뷰티포인트</a>|
+                        <a href="http://www.osulloc.com/kr/ko/misc/sitemap">사이트맵</a>
+                    </div>
+                    <div class="matrix">
+                        <span>공지</span>
+                        <ul>
+                            <li><a href="">선물하기 이벤트(7월) 당첨자 발표</a></li>
+                        </ul>
+                        <span class="img_button">
+                            <a href="http://www.osulloc.com/kr/ko/cs/notice">
+                                <span>+</span>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_area">
+                <div class="footer_box">
+                    <div class="footer_up">
+                        <div class="footer_ul">
+                            <div class="footer_ul_left">
+                                <b>주문.배송문의</b>
+                                <strong>031-8047-9388</strong>
+                                <p>평일 09:00 - 17:00 (점심 12:00 - 13:00)</p>
+                            </div>
+                            <div class="footer_ul_right">
+                                <p><strong>제품문의 | 080-023-5454 </strong>(수신자요금부담)</p>
+                                <p>
+                                    E-mail  osulloc.com@amorepacific.com <br/>
+                                    (대량구매, 제휴 등 이메일 문의)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer_ur">
+                            <ul>
+                                <li>
+                                    <a href="http://www.osulloc.com/kr/ko/store">
+                                        <div class="icon_1"></div>
+                                        <p>매장안내</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.osulloc.com/kr/ko/cs/member/benefit">
+                                        <div class="icon_2"></div>
+                                        <p>멤버쉽혜택</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.osulloc.com/kr/ko/cs/faq/order">
+                                        <div class="icon_3"></div>
+                                        <p>FAQ</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.osulloc.com/kr/ko/login?r=https%3A%2F%2Fwww.osulloc.com%2Fkr%2Fko%2Fmypage%2Fqna">
+                                        <div class="icon_4"></div>
+                                        <p>1:1문의</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_down">
+                        <div class="footer_dl">
+                            <strong>(주)아모레퍼시픽</strong>
+                            <p>
+                                대표이사:심상배 주소:서울시 중구 청계천로100 사업자등록번호:106-86-43373
+                                <a href="http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=1068643373">사업자 정보확인　></a>
+                            </p>
+                            <p>통신판매업신고번호:서울중구-0408호 호스팅제공자:(주)아모레퍼시픽</p>
+                            <p>1979-2016 AMOREPACIFIC.ALL Right Reserved.</p>
+                        </div>
+                        <div class="footer_dc">
+                            <p>(주)이니시스 구매안전서비스</p>
+                            <b>
+                                고객님의 안전거래를 위해 현금 거래에 대해 이니페이<br>
+                                에스크로서비스를 이용하실 수 있습니다.
+                            </b>
+                            <p>
+                                <a href="https://mark.inicis.com/mark/escrow_popup.php?no=68749&st=1414743448">서비스 가입사실 확인></a>
+                            </p>
+                        </div>
+                        <div class="footer_dr">
+                            <a href="" class="facebook"></a>
+                            <a href="" class="instar"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top_button">
+                <a href="#">
+                    <img src="img/top_btn_arr.png" alt="">
+                </a>
+            </div>
+        </footer>
+        <!--footer End-->
+
+    </div>
 </body>
 </html>
