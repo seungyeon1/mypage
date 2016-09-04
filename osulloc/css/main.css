@@ -80,7 +80,9 @@
 .wrap #section .product_list .sub_slide {width:1120px; height: 327px; margin:0 auto; overflow:hidden; }
 .wrap #section .product_list .sub_slide .sub_slide_button {position:relative;}
 .wrap #section .product_list .sub_slide .sub_slide_button .ss_pre {position:absolute; top:125px; z-index:10;}
+.wrap #section .product_list .sub_slide .sub_slide_button .ss_pre:hover{cursor:pointer;}
 .wrap #section .product_list .sub_slide .sub_slide_button .ss_next {position:absolute; top:125px; right:0; z-index:10;}
+.wrap #section .product_list .sub_slide .sub_slide_button .ss_next:hover{cursor:pointer;}
 .wrap #section .product_list .sub_slide .a_button {position:absolute; left:48%;}
 .wrap #section .product_list .sub_slide .a_button > a {border:1px #ccc solid; width: 11px;height: 11px;border-radius:100%; display:inline-block; text-indent:-9999px; overflow:hidden; margin-right:5px;}
 .wrap #section .product_list .sub_slide .a_button > a.on {background-color:#e5e5e5;}
