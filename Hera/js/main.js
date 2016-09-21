@@ -2,23 +2,27 @@ $(function(){
 
 $('.seletor').click(function(){
   $('.global_list').toggle();
-  $('.seletor').css('backgroundImage','url(images/global_on.png)');
 
+  if($(this).hasClass('seletor'))
+  {
+      $(this).addClass('seletor2').removeClass('seletor');
+  }
+  else
+  {
+      $(this).addClass('seletor').removeClass('seletor2');
+  }
 })
+
+
+
 $('.global_list li a').mouseover(function(){
 
-  var idx=$('.global_list li').index();
-  var hidx=$('.global_list .on').index();
-  console.log('hidx')
 
-  $(this).parent().eq(hidx).removeClass('on').next().addClass('on');
-
-  if(hidx == 0){
-      hidx = 0;
-      $('.global_list li a').eq(hidx).addClass('on').siblings().removeClass('on')
-  }
-
+  $(this).parent().addClass('on')
   return false;
+}).mouseleave(function(){
+  $(this).parent().removeClass('on')
 })
+return false;
 
 })

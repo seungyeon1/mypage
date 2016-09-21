@@ -43,6 +43,17 @@
                                            font-family:'Roboto-L';
                                            letter-spacing:1px;
 }
+#header #header_top #global_menu .seletor2{
+                                           color:#fff;
+                                           opacity: 0.85;
+                                           font-size:12px;
+                                           background-image:url(../images/global_on.png);
+                                           background-repeat:no-repeat;
+                                           background-position: right 10px;
+                                           padding: 4px 20px 7px 4px;
+                                           font-family:'Roboto-L';
+                                           letter-spacing:1px;
+}
 #header #header_top #global_menu .global_list{
                                               display: none;
                                               background-color:#785a96;
